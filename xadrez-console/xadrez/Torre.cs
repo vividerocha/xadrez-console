@@ -39,7 +39,7 @@ namespace xadrez
                 pos.linha = pos.linha - 1;
             }
             //abaixo
-            pos.definirValores(posicao.linha - 1, posicao.coluna);
+            pos.definirValores(posicao.linha + 1, posicao.coluna);
             while (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
